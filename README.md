@@ -22,18 +22,15 @@
 
 ## First attempt at AI prompt
 
-- zero-shot
-- Claude
+- Claude Code (Sonnet 4.5) 
+- Zero-shot
+- No thinking or extended thinking used
 
 
 ### Prompt
 
 ```
-review the codebase and help me determine under what situations will the exception on line 782 of the ile lib/dml/moodile_databse.php will be thrown in 
-cases where grading will be done. here is a message from a user experiencing the problem: We have several faculty members who have run into the same error
- message when attempting to grade an exam in the CLE. When clicking into the link(s) below and clicking "Grade" next to one of the ungraded questions, 
-they are getting an error that reads: "Coding error detected, it must be fixed by a programmer: moodle_database::get_in_or_equal() does not accept empty 
-arrays - More information about this error" 
+review the codebase and help me determine under what situations will the exception on line 782 of the ile lib/dml/moodile_databse.php will be thrown in cases where grading will be done. here is a message from a user experiencing the problem: We have several faculty members who have run into the same error message when attempting to grade an exam in the CLE. When clicking into the link(s) below and clicking "Grade" next to one of the ungraded questions, they are getting an error that reads: "Coding error detected, it must be fixed by a programmer: moodle_database::get_in_or_equal() does not accept empty arrays - More information about this error" 
 ```
 
 ### Output
@@ -148,14 +145,14 @@ Got error 'PHP message: Default exception handler: Coding error detected, it mus
 
 
 
-## Second prompt
+## Second Attempt at AI Prompt
 
-- Codex (gpt5)
-- one-shot prompt?
+- Codex (GPT-5)
+- Zero-shot prompt
 
 ### Prompt
 
-n/a, but it included the stack trace.
+Same prompt used with Claude Code; No stack trace provided to the model.
 
 ### Output
 
@@ -178,7 +175,7 @@ Next steps: ensure anonymous codes exist before enabling the "usercode" sort (e.
 
 ### Review
 
-- Codex analyses the stack trace mostly correct, and points out the `INNER JOIN` as the source of failure. 
+- Codex analyzes the issue mostly correct, and points out the `INNER JOIN` as the source of failure. 
 
 - Suggested next steps are partially correct. 
 
