@@ -30,7 +30,14 @@
 ### Prompt
 
 ```
-review the codebase and help me determine under what situations will the exception on line 782 of the ile lib/dml/moodile_databse.php will be thrown in cases where grading will be done. here is a message from a user experiencing the problem: We have several faculty members who have run into the same error message when attempting to grade an exam in the CLE. When clicking into the link(s) below and clicking "Grade" next to one of the ungraded questions, they are getting an error that reads: "Coding error detected, it must be fixed by a programmer: moodle_database::get_in_or_equal() does not accept empty arrays - More information about this error" 
+review the codebase and help me determine under what situations will the exception on line 782
+of the ile lib/dml/moodile_databse.php will be thrown in cases where grading will be done.  
+here is a message from a user experiencing the problem: We have several faculty members who
+have run into the same error message when attempting to grade an exam in the CLE.
+When clicking into the link(s) below and clicking "Grade" next to one of the ungraded
+questions, they are getting an error that reads:  
+"Coding error detected, it must be fixed by a programmer: moodle_database::get_in_or_equal() does
+not accept empty arrays - More information about this error" 
 ```
 
 ### Output
